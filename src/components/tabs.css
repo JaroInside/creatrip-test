@@ -1,0 +1,52 @@
+.tabs {
+  position: relative;
+  display: inline-block;
+  width: 60%;
+  max-width: 450px;
+  min-width: 315px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.tabs li {
+  position: relative;
+  min-width: 105px;
+}
+
+.tabs .tab {
+  display: inline-block;
+  height: 100%;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.indicator {
+  left: 0%;
+  bottom: 7px;
+  background-color: black;
+  height: 2px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.tabs .tab a {
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+  overflow: hidden;
+  color: #999;
+  font-size: 1rem;
+  text-align: center;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.tabs .tab a:hover {
+  color: black;
+}
+
+.tabs .tab .active {
+  color: black;
+}

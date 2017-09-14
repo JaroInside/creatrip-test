@@ -1,0 +1,48 @@
+.inline-input {
+  position: relative;
+  width: 30%;
+  min-width: 100px;
+  margin: auto;
+}
+
+.inline-input input, .inline-input textarea {
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-bottom: 2px solid #999;
+  transition: all 0.3s ease;
+  background: none;
+  position: relative;
+  top: 0;
+  left: 0;
+  outline: 0;
+  z-index: 2;
+  font-size: 1.5rem;
+}
+
+.inline-input input:focus, .inline-input textarea:focus {
+  border-bottom: 2px solid black;
+}
+
+.inline-input label {
+  transition: all 0.3s ease;
+  position: absolute;
+  color: #999;
+}
+.inline-input textarea {
+  display: block;
+  resize: vertical;
+}
+
+.inline-input label {
+  font-size: 1.5rem;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.inline-input input:focus + label, .inline-input textarea:focus + label {
+  top: -10px;
+  color: black;
+  font-size: 80%;
+}

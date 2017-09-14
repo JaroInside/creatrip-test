@@ -1,0 +1,13 @@
+.ripple {
+  position: absolute;
+	display: block;
+  background-color: white;
+  opacity: 0.5;
+	border-radius: 100%;
+	transform: scale(0);
+}
+
+.ripple.animate {animation: ripple 0.5s linear;}
+@keyframes ripple {
+	100% {opacity: 0; transform: scale(5);}
+}
